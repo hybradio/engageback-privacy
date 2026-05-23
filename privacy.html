@@ -1,51 +1,276 @@
-EngageBack for X Privacy Policy
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EngageBack for X Privacy Policy</title>
+  <meta name="description" content="Privacy policy for EngageBack for X, a local-first Chrome extension for personal engagement memory on X.com and Twitter.com.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22d3ee;
+      --accent-soft: rgba(34, 211, 238, 0.12);
+      --border: rgba(255, 255, 255, 0.1);
+      --max-width: 900px;
+    }
 
-Effective Date: May 23, 2026
+    * {
+      box-sizing: border-box;
+    }
 
-EngageBack for X is a local-first Chrome extension that helps users remember their own visible engagement activity on X.com and Twitter.com.
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at top left, rgba(34, 211, 238, 0.15), transparent 32rem),
+        linear-gradient(180deg, #0f172a 0%, #020617 100%);
+      color: var(--text);
+    }
 
-Data Processed
+    .page {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
 
-EngageBack may process visible website content and user activity from X.com and Twitter.com pages that the user personally opens. This may include visible handles, display names, post/status links, post snippets, notification text, visible engagement indicators, and user actions such as likes, replies, reposts, bookmarks, and profile visits.
+    header {
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: rgba(17, 24, 39, 0.86);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
 
-Local Storage
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      margin-bottom: 16px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
 
-EngageBack stores data locally in the user's browser using Chrome extension storage and IndexedDB. This data is used only to provide the extension's dashboard, engagement summaries, local badges, suggested actions, exports, and user preferences.
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.1;
+    }
 
-No Data Transmission
+    .subtitle {
+      margin: 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
 
-EngageBack does not send user data to the developer, to a backend server, or to third parties.
+    main {
+      margin-top: 28px;
+      display: grid;
+      gap: 18px;
+    }
 
-EngageBack does not use the X API.
+    section {
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: rgba(31, 41, 55, 0.78);
+    }
 
-EngageBack does not use analytics.
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
 
-EngageBack does not sell or share user data.
+    p {
+      margin: 0 0 14px;
+      color: var(--text);
+    }
 
-EngageBack does not use user data for advertising.
+    p:last-child {
+      margin-bottom: 0;
+    }
 
-EngageBack does not use user data to determine creditworthiness or for lending purposes.
+    ul {
+      margin: 12px 0 0;
+      padding-left: 1.25rem;
+    }
 
-No Automation
+    li {
+      margin: 8px 0;
+      color: var(--text);
+    }
 
-EngageBack does not automate likes, replies, reposts, follows, direct messages, or navigation. Users remain fully responsible for any actions they choose to take on X.com or Twitter.com.
+    strong {
+      color: #ffffff;
+    }
 
-User Control
+    .note {
+      padding: 18px;
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      background: var(--accent-soft);
+      color: var(--text);
+    }
 
-Users can export their local EngageBack data as JSON or CSV from the extension.
+    .muted {
+      color: var(--muted);
+    }
 
-Users can delete all local EngageBack data from the extension at any time.
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-Data Scope
+    a:hover {
+      text-decoration: underline;
+    }
 
-EngageBack only runs on X.com and Twitter.com pages covered by its Chrome extension permissions. It does not read or collect data from other websites.
+    footer {
+      margin-top: 28px;
+      padding: 22px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
 
-Changes
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, var(--max-width));
+        padding: 24px 0;
+      }
 
-This privacy policy may be updated from time to time. Updates will be posted at this same URL.
+      header,
+      section {
+        padding: 20px;
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>EngageBack for X</h1>
+      <p class="subtitle">
+        EngageBack for X is a local-first Chrome extension that helps users remember their own visible engagement activity on X.com and Twitter.com.
+      </p>
+    </header>
 
-Contact
+    <main>
+      <section>
+        <h2>Effective Date</h2>
+        <p>May 23, 2026</p>
+      </section>
 
-For privacy questions, contact:
+      <section>
+        <h2>Overview</h2>
+        <p>
+          EngageBack for X helps users review engagement patterns based only on X.com and Twitter.com pages they personally open in their browser.
+        </p>
+        <p class="note">
+          EngageBack does not send user data to the developer, a backend server, or third parties. Data is stored locally in the user's browser.
+        </p>
+      </section>
 
-edneller@gmail.com
+      <section>
+        <h2>Data Processed</h2>
+        <p>
+          EngageBack may process visible website content and user activity from X.com and Twitter.com pages that the user personally opens.
+        </p>
+        <p>This may include:</p>
+        <ul>
+          <li>Visible handles and display names</li>
+          <li>Post or status links</li>
+          <li>Short visible post snippets</li>
+          <li>Notification text visible on the page</li>
+          <li>Visible engagement indicators</li>
+          <li>User actions such as likes, replies, reposts, bookmarks, and profile visits when detectable</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Local Storage</h2>
+        <p>
+          EngageBack stores data locally in the user's browser using Chrome extension storage and IndexedDB.
+        </p>
+        <p>
+          This local data is used only to provide the extension's dashboard, engagement summaries, local badges, suggested actions, exports, and user preferences.
+        </p>
+      </section>
+
+      <section>
+        <h2>No Data Transmission</h2>
+        <ul>
+          <li>EngageBack does not send user data to the developer.</li>
+          <li>EngageBack does not send user data to a backend server.</li>
+          <li>EngageBack does not sell or share user data.</li>
+          <li>EngageBack does not use user data for advertising.</li>
+          <li>EngageBack does not use analytics.</li>
+          <li>EngageBack does not use the X API.</li>
+          <li>EngageBack does not use user data to determine creditworthiness or for lending purposes.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>No Automation</h2>
+        <p>
+          EngageBack does not automate likes, replies, reposts, follows, direct messages, or navigation.
+        </p>
+        <p>
+          Users remain fully responsible for any actions they choose to take on X.com or Twitter.com.
+        </p>
+      </section>
+
+      <section>
+        <h2>User Control</h2>
+        <ul>
+          <li>Users can export their local EngageBack data as JSON or CSV from the extension.</li>
+          <li>Users can delete all local EngageBack data from the extension at any time.</li>
+          <li>Users can disable tracking and page badges through extension settings when available.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Scope</h2>
+        <p>
+          EngageBack only runs on X.com and Twitter.com pages covered by its Chrome extension permissions.
+        </p>
+        <p>
+          EngageBack does not read or collect data from other websites.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>
+          This privacy policy may be updated from time to time. Updates will be posted at this same URL.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, contact:
+          <a href="mailto:edneller@gmail.com">edneller@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="muted">EngageBack for X Privacy Policy</p>
+    </footer>
+  </div>
+</body>
+</html>
